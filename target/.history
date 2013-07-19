@@ -1,0 +1,36 @@
+run
+gen-idea
+run
+run last compile:run
+run
+compile
+run
+run last compile:run
+run
+run last compile:run
+run
+run last compile:run
+run
+run last compile:run
+run
+run last compile:run
+run
+run last compile:run
+run
+run last compile:run
+run
+compile
+test
+test:test
+compile
+test
+gen-idea
+test
+test:state
+test
+run
+test
+test:test-quick
+test
+test:test-quick
+test
