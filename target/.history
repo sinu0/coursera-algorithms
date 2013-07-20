@@ -34,3 +34,13 @@ test:test-quick
 test
 test:test-quick
 test
+test\
+test
+test\
+test
+run
+test
+last test
+test:compile
+test:console
+test

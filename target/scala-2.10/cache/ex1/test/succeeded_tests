@@ -1,5 +1,7 @@
 #Successful Tests
-#Sat Jul 20 01:09:52 CEST 2013
+#Sat Jul 20 20:11:51 CEST 2013
 scala.algo.ex1.tests.margetSortTest=1374255179357
-scala.algo.ex1.tests.MergeSortTest=1374275392363
+scala.algo.ex1.tests.BubbleSortTest=1374343909772
+scala.algo.ex1.tests.MergeSortTest=1374343911792
 scala.algo.ex1.tests.QuickSortTest=1374275392345
+scala.algo.ex2.QuickSortTest=1374343910627
