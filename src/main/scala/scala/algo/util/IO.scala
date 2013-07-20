@@ -11,10 +11,10 @@ import scala.io.Source._
  */
 object IO {
 
-  def readFile[T](path: String): List[T] = {
+  def readFile(path: String): List[Int] = {
     val list = fromFile(path).getLines().toList map {
       elem =>
-        elem.asInstanceOf[T]
+        elem.toInt
     }
     list
   }
