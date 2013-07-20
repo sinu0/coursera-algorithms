@@ -1,4 +1,0 @@
-[0m[[0minfo[0m] [0m[32mBubbleSortTest:[0m[0m
-[0m[[0minfo[0m] [0m[32m- given array 1 should be unchanged[0m[0m
-[0m[[0minfo[0m] [0m[32m- given array 1,2 should be unchanged[0m[0m
-[0m[[0minfo[0m] [0m[32m- given array 1,-1 should be -1,1[0m[0m
