@@ -1,4 +1,4 @@
-package scala.algo.util
+package algo.util
 
 import scala.io.Source._
 

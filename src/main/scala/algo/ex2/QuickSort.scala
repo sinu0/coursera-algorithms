@@ -1,4 +1,4 @@
-package scala.algo.ex2
+package algo.ex2
 
 /**
  * Created with IntelliJ IDEA.

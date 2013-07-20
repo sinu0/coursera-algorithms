@@ -1,4 +1,4 @@
-package scala.algo.ex1
+package algo.ex1
 
 import scala.collection.mutable._
 import scala.annotation.tailrec
@@ -10,19 +10,23 @@ object MergeSort {
     def countSplitAndSort(a: List[Int], b: List[Int], acc: Int, output: ListBuffer[Int]): (ListBuffer[Int], Int) = {
       (a, b) match {
         case (array, Nil) => ( {
-          output.append(array: _*); output
+          output.append(array: _*)
+          output
         }, acc)
         case (Nil, array) => ( {
-          output.append(array: _*); output
+          output.append(array: _*)
+          output
         }, acc + 1)
         case (hA :: tA, hB :: tB) =>
           if (hA <= hB) {
             countSplitAndSort(tA, b, acc, {
-              output.append(hA); output
+              output.append(hA)
+              output
             })
           } else {
             countSplitAndSort(a, tB, acc + 1, {
-              output.append(hB); output
+              output.append(hB)
+              output
             })
           }
       }
@@ -39,7 +43,7 @@ object MergeSort {
       val x = sort(lists._1)
       val y = sort(lists._2)
       val z = countSplit(x._1.toList, y._1.toList)
-      return (z._1, z._2 + x._2 + y._2)
+      (z._1, z._2 + x._2 + y._2)
     }
   }
 }

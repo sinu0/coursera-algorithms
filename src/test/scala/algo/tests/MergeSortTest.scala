@@ -1,8 +1,9 @@
-package scala.algo.ex1.tests
+package algo.tests
 
 import org.scalatest.FunSuite
-import scala.algo.ex1.MergeSort
 import scala.collection.mutable.ListBuffer
+import algo.ex1._
+import algo.util.TimeMeasure._
 
 /**
  * Created with IntelliJ IDEA.
@@ -15,7 +16,6 @@ import scala.collection.mutable.ListBuffer
 
 class MergeSortTest extends FunSuite {
 
-  import scala.algo.util.TimeMeasure._
 
   lazy val sortStrategy = MergeSort
 
@@ -39,13 +39,12 @@ class MergeSortTest extends FunSuite {
 
   }
   test("Sorting test. Very big array should be sorted") {
-
-    import scala.algo.util.IO._
+    import algo.util.IO._
     val big = readFile("/home/mar/QuickSort.txt")
-    val bigList = (big ::: big ::: big)
+    val bigList = big ::: big ::: big
     val output1 = bigList.sortBy(x => x)
     val in = bigList.to[ListBuffer]
-    val output = MergeSort.sort(in).time
+    val output = MergeSort.sort(in).time()
 
     assert(output._1 === output1)
 

@@ -1,8 +1,9 @@
-package scala.algo.ex2
+package algo.tests
 
 import org.scalatest.FunSuite
 import scala.collection.mutable._
-import scala.algo.util.TimeMeasure._
+import algo.util.TimeMeasure._
+import algo.ex2._
 
 /**
  * Created with IntelliJ IDEA.
@@ -72,12 +73,12 @@ class QuickSortTest extends FunSuite {
   }
   test("Sorting test. Very big array should be sorted") {
 
-    import scala.algo.util.IO._
+    import algo.util.IO._
     val big = readFile("/home/mar/QuickSort.txt")
-    val bigList = (big ::: big ::: big)
+    val bigList = big ::: big ::: big
 
     val output = bigList.sortBy(x => x).time
-    assert(!(output.equals(bigList)))
+    assert(!output.equals(bigList))
     val bigL = bigList.to[ArrayBuffer]
     QuickSort.sort[Int](bigL, 0, bigList.length - 1, (x, y) => x <= y).time
 

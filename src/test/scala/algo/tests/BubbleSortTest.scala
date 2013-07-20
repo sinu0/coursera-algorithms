@@ -1,4 +1,4 @@
-package scala.algo.ex1.tests
+package algo.tests
 
 /**
  * Created with IntelliJ IDEA.
@@ -8,7 +8,7 @@ package scala.algo.ex1.tests
  * To change this template use File | Settings | File Templates.
  */
 
-import scala.algo.ex0.BubbleSort
+import algo.ex0.BubbleSort
 import org.scalatest.FunSuite
 
 class BubbleSortTest extends FunSuite {
@@ -45,7 +45,7 @@ class BubbleSortTest extends FunSuite {
   }
   //  test("given array 1,2,3,6,2,6,3 should be 1,2,2,3,3,6,6"){
   //
-  //    import scala.algo.util.TimeMeasure._
+  //    import algo.util.TimeMeasure._
   //
   //    val inputList = List(1,2,3,6,2,6,3)
   //    val properList = List(1,2,2,3,3,6,6)
@@ -56,7 +56,7 @@ class BubbleSortTest extends FunSuite {
   //  }
   //  test("given array 1,2,3,6,2,6,3 should be 1,2,2,3,3,6f,6"){
   //
-  //    import scala.algo.util.TimeMeasure._
+  //    import algo.util.TimeMeasure._
   //
   //    val inputList = List(1,2,3,6,2,6,3,1,2,3,6,2,6,3,1,2,3,6,2,6,3,1,2,3,6,2,6,3,1,2,3,6,2,6,3)
   //    val properList = List(1,2,2,3,3,6,6)
